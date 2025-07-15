@@ -7,26 +7,47 @@ calculator
 
 spring-boot-calculator
 ├── .idea
+
 ├── .mvn/
+
 ├── src/
+
 │   ├── main/
+
 │   │   ├── java/
+
 │   │   │   └── com/
+
 │   │   │       └── example/
+
 │   │   │           └── calculator/
+
 │   │   │               ├── controller/
+
 │   │   │               │   └── CalculatorController.java
+
 │   │   │               ├── service/
+
 │   │   │               │   └── CalculatorService.java
+
 │   │   │               └── CalculatorApplication.java
+
 │   │   └── resources/
+
 │   │       └── application.properties
+
 │   └── test/
+
 ├── target/
+
 ├── .gitignore
+
 ├── pom.xml
+
 ├── mvnw
+
 ├── mvnw.cmd
+
 └── README.md
                                      
 🔧 Features
