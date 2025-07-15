@@ -3,26 +3,32 @@
 A simple RESTful Calculator built with Spring Boot. This application provides basic arithmetic operations like addition, subtraction, multiplication, and division through HTTP GET endpoints.
 
 📁 Project Structure
-calculator/
-├── .idea/                   # IntelliJ IDEA project files
-├── .mvn/                    # Maven wrapper support files
+calculator
+
+spring-boot-calculator
+├── .idea
+├── .mvn/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com.example.calculator/
-│   │   │       ├── controller/
-│   │   │       │   └── CalculatorController.java   # Handles REST API endpoints
-│   │   │       ├── service/
-│   │   │       │   └── CalculatorService.java      # Business logic for calculations
-│   │   │       └── CalculatorApplication.java      # Main class to bootstrap Spring Boot
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── calculator/
+│   │   │               ├── controller/
+│   │   │               │   └── CalculatorController.java
+│   │   │               ├── service/
+│   │   │               │   └── CalculatorService.java
+│   │   │               └── CalculatorApplication.java
 │   │   └── resources/
-│   │       └── application.properties              # Configurations (currently empty)
-│   └── test/                                       # Unit tests (optional)
-├── target/                                         # Compiled classes and packaged .jar
+│   │       └── application.properties
+│   └── test/
+├── target/
 ├── .gitignore
-├── pom.xml                                         # Maven build configuration
-├── mvnw, mvnw.cmd                                  # Maven wrapper scripts
-└── README.md                                       # Project documentation
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+└── README.md
+                                     
 🔧 Features
 Addition: /api/calc/add?a=5&b=10
 
@@ -48,8 +54,11 @@ mvnw.cmd spring-boot:run
 Access the API in browser or Postman:
 
 http://localhost:8080/api/calc/add?a=10&b=5
+
 http://localhost:8080/api/calc/sutract?a=10&b=5
+
 http://localhost:8080/api/calc/multiply?a=10&b=5
+
 http://localhost:8080/api/calc/divide?a=10&b=5
 📦 Dependencies
 Spring Boot Starter Web
